@@ -1,0 +1,65 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: G:/github/os_plus/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/tools/x86_64-elf-tools-windows/bin/make.exe -f Makefile cmTC_85863/fast && G:/tools/x86_64-elf-tools-windows/bin/make.exe  -f CMakeFiles/cmTC_85863.dir/build.make CMakeFiles/cmTC_85863.dir/build
+make[1]: Entering directory 'G:/github/os_plus/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj
+G:/tools/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe   -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables    -v -o CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj -c D:/Personal/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=G:/tools/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe
+Target: x86_64-elf
+Configured with: ../gcc-7.1.0/configure --host=i686-w64-mingw32.static --target=x86_64-elf --disable-nls --enable-languages=c,c++ --without-headers --prefix=/root/build-x86_64-elf/windows/output
+Thread model: single
+gcc version 7.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-g' '-c' '-O0' '-m32' '-fno-pie' '-fno-stack-protector' '-fno-asynchronous-unwind-tables' '-v' '-o' 'CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ g:/tools/x86_64-elf-tools-windows/bin/../libexec/gcc/x86_64-elf/7.1.0/cc1.exe -quiet -v -iprefix g:\tools\x86_64-elf-tools-windows\bin\../lib/gcc/x86_64-elf/7.1.0/ D:/Personal/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -m32 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj -g -O0 -version -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -o C:\Users\Fire\AppData\Local\Temp\cc8oX6cj.s
+GNU C11 (GCC) version 7.1.0 (x86_64-elf)
+	compiled by GNU C version 5.5.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "g:\tools\x86_64-elf-tools-windows\bin\../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/sys-include"
+ignoring nonexistent directory "g:\tools\x86_64-elf-tools-windows\bin\../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/include"
+ignoring duplicate directory "g:/tools/x86_64-elf-tools-windows/lib/gcc/../../lib/gcc/x86_64-elf/7.1.0/include"
+ignoring duplicate directory "g:/tools/x86_64-elf-tools-windows/lib/gcc/../../lib/gcc/x86_64-elf/7.1.0/include-fixed"
+ignoring nonexistent directory "g:/tools/x86_64-elf-tools-windows/lib/gcc/../../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/sys-include"
+ignoring nonexistent directory "g:/tools/x86_64-elf-tools-windows/lib/gcc/../../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ g:\tools\x86_64-elf-tools-windows\bin\../lib/gcc/x86_64-elf/7.1.0/include
+ g:\tools\x86_64-elf-tools-windows\bin\../lib/gcc/x86_64-elf/7.1.0/include-fixed
+End of search list.
+GNU C11 (GCC) version 7.1.0 (x86_64-elf)
+	compiled by GNU C version 5.5.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b00064cd55ffce4efe95d0fcd6948296
+COLLECT_GCC_OPTIONS='-g' '-c' '-O0' '-m32' '-fno-pie' '-fno-stack-protector' '-fno-asynchronous-unwind-tables' '-v' '-o' 'CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+ g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/bin/as.exe --32 -o CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj C:\Users\Fire\AppData\Local\Temp\cc8oX6cj.s
+COMPILER_PATH=g:/tools/x86_64-elf-tools-windows/bin/../libexec/gcc/x86_64-elf/7.1.0/;g:/tools/x86_64-elf-tools-windows/bin/../libexec/gcc/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/bin/
+LIBRARY_PATH=g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/lib/
+COLLECT_GCC_OPTIONS='-g' '-c' '-O0' '-m32' '-fno-pie' '-fno-stack-protector' '-fno-asynchronous-unwind-tables' '-v' '-o' 'CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_85863
+G:/tools/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe -g -c -O0 -m32 -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables   -v "CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj"  -o cmTC_85863 
+Using built-in specs.
+COLLECT_GCC=G:\tools\x86_64-elf-tools-windows\bin\x86_64-elf-gcc.exe
+Target: x86_64-elf
+Configured with: ../gcc-7.1.0/configure --host=i686-w64-mingw32.static --target=x86_64-elf --disable-nls --enable-languages=c,c++ --without-headers --prefix=/root/build-x86_64-elf/windows/output
+Thread model: single
+gcc version 7.1.0 (GCC) 
+COMPILER_PATH=g:/tools/x86_64-elf-tools-windows/bin/../libexec/gcc/x86_64-elf/7.1.0/;g:/tools/x86_64-elf-tools-windows/bin/../libexec/gcc/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/bin/
+LIBRARY_PATH=g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/;g:/tools/x86_64-elf-tools-windows/bin/../lib/gcc/x86_64-elf/7.1.0/../../../../x86_64-elf/lib/
+COLLECT_GCC_OPTIONS='-g' '-c' '-O0' '-m32' '-fno-pie' '-fno-stack-protector' '-fno-asynchronous-unwind-tables' '-v' '-o' 'cmTC_85863' '-mtune=generic' '-march=x86-64'
+x86_64-elf-gcc.exe: warning: CMakeFiles/cmTC_85863.dir/CMakeCCompilerABI.c.obj: linker input file unused because linking not done
+make[1]: Leaving directory 'G:/github/os_plus/build/CMakeFiles/CMakeTmp'
+
+
+Cannot copy output executable
+  ''
+to destination specified by COPY_FILE:
+  'G:/github/os_plus/build/CMakeFiles/3.20.21032501-MSVC_2/CMakeDetermineCompilerABI_C.bin'
+Unable to find the executable at any of:
+  G:/github/os_plus/build/CMakeFiles/CMakeTmp/cmTC_85863
+  G:/github/os_plus/build/CMakeFiles/CMakeTmp/Debug/cmTC_85863
+  G:/github/os_plus/build/CMakeFiles/CMakeTmp/Development/cmTC_85863
+
+

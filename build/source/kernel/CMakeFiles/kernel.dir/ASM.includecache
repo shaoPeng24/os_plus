@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../source/kernel/include/os_cfg.h
+
+G:/github/os_plus/source/kernel/init/start.S
+os_cfg.h
+G:/github/os_plus/source/kernel/init/os_cfg.h
+

@@ -1,0 +1,11 @@
+G:/github/os_plus/build/CMakeFiles/edit_cache.dir
+G:/github/os_plus/build/CMakeFiles/rebuild_cache.dir
+G:/github/os_plus/build/source/boot/CMakeFiles/rebuild_cache.dir
+G:/github/os_plus/build/source/boot/CMakeFiles/boot.dir
+G:/github/os_plus/build/source/boot/CMakeFiles/edit_cache.dir
+G:/github/os_plus/build/source/loader/CMakeFiles/loader.dir
+G:/github/os_plus/build/source/loader/CMakeFiles/edit_cache.dir
+G:/github/os_plus/build/source/loader/CMakeFiles/rebuild_cache.dir
+G:/github/os_plus/build/source/kernel/CMakeFiles/edit_cache.dir
+G:/github/os_plus/build/source/kernel/CMakeFiles/kernel.dir
+G:/github/os_plus/build/source/kernel/CMakeFiles/rebuild_cache.dir

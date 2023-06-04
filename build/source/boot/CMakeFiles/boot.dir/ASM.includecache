@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/github/os_plus/source/boot/boot.h
+
+G:/github/os_plus/source/boot/start.S
+boot.h
+G:/github/os_plus/source/boot/boot.h
+
