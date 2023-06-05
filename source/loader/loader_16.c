@@ -1,12 +1,6 @@
 /**
- * 自己动手写操作系统
+ * 
  *
- * 16位引导代码
- * 二级引导，负责进行硬件检测，进入保护模式，然后加载内核，并跳转至内核运行
- *
- * 创建时间：2021年8月5日
- * 作者：李述铜
- * 联系邮箱: 527676163@qq.com
  */
 
 // 16位代码，必须加上放在开头，以便有些io指令生成为32位
@@ -72,7 +66,6 @@ static void  detect_memory(void) {
 			break;
 		}
 	}
-    show_msg("ok.\r\n");
 }
 
 // GDT表。临时用，后面内容会替换成自己的
@@ -108,8 +101,9 @@ static void  enter_protect_mode() {
 }
 
 void loader_entry(void) {
-    show_msg("....loading.....\r\n");
+    show_msg("\r\n....loader init.....\r\n");
 	detect_memory();
+	show_msg("detect_memory ok ...\r\n");
     enter_protect_mode();
     for(;;) {}
 }
