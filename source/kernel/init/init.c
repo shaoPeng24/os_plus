@@ -1,9 +1,6 @@
 ﻿/**
  * 内核初始化以及测试代码
  *
- * 创建时间：2021年8月5日
- * 作者：李述铜
- * 联系邮箱: 527676163@qq.com
  */
 #include "comm/boot_info.h"
 #include "comm/cpu_instr.h"
@@ -14,15 +11,14 @@
 
 static boot_info_t * init_boot_info;        // 启动信息
 
-/**
- * 内核入口
- */
+/* 入口 */
+
 void kernel_init (boot_info_t * boot_info) {
     init_boot_info = boot_info;
 
     // 初始化CPU，再重新加载
-    cpu_init();
-    irq_init();
+    cpu_init();  // 内存访问初始化(GDT表)
+    irq_init();  // 中断初始化(idt表)
     time_init();
 }
 

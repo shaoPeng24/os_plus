@@ -1,21 +1,19 @@
 ﻿/**
  * CPU设置
- *
- * 创建时间：2021年8月5日
- * 作者：李述铜
- * 联系邮箱: 527676163@qq.com
+ * 目前为保护模式,需要重新设置内存访问相关的
  */
 #include "comm/cpu_instr.h"
 #include "cpu/cpu.h"
 #include "os_cfg.h"
 
-static segment_desc_t gdt_table[GDT_TABLE_SIZE];
+static segment_desc_t gdt_table[GDT_TABLE_SIZE];//8byte
 
 /**
  * 设置段描述符
+ * selector：偏移的大小Byte
  */
 void segment_desc_set(int selector, uint32_t base, uint32_t limit, uint16_t attr) {
-    segment_desc_t * desc = gdt_table + (selector >> 3);
+    segment_desc_t * desc = gdt_table + (selector >> 3);//selector/sizeof(segment_desc_t)
 
 	// 如果界限比较长，将长度单位换成4KB
 	if (limit > 0xfffff) {
@@ -55,7 +53,7 @@ void init_gdt(void) {
 
     // 只能用非一致代码段，以便通过调用门更改当前任务的CPL执行关键的资源访问操作
     segment_desc_set(KERNEL_SELECTOR_CS, 0x00000000, 0xFFFFFFFF,
-                     SEG_P_PRESENT | SEG_DPL0 | SEG_S_NORMAL | SEG_TYPE_CODE
+                     SEG_P_PRESENT | SEG_DPL0 | SEG_S_NORMAL | SEG_TYPE_DATA
                      | SEG_TYPE_RW | SEG_D | SEG_G);
 
 

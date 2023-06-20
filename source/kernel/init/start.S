@@ -1,5 +1,7 @@
 /**
  * kernel c语言中不许要管栈指针，而在汇编中需要
+ * 1. 配置GDT表 ：逻辑地址->线性地址
+ * 2. 
  */
  #include "os_cfg.h"
 
@@ -9,23 +11,15 @@
 	.extern kernel_init
 	.extern init_main
 _start:
-    # 第一种方法
-    # push %ebp
-    # mov %esp, %ebp
-    # mov 0x8(%ebp), %eax
-    # push %eax
 
-    # 第二种方法
-    # mov 4(%esp), %eax
-    # push %eax
 
-    # 第三种方法
+    # 现在esp指向返回地址，esp+4是参数地址。 
     push 4(%esp)
 
-    # kernel_init(boot_info)
+    # kernel_init(boot_info) 自动压入返回地址
     call kernel_init
 
-	// 重新加载GDT
+	// 重新加载GDT 并且设置CS寄存器为KERNEL_SELECTOR_CS
 	jmp $KERNEL_SELECTOR_CS, $gdt_reload
 
 gdt_reload:
@@ -50,8 +44,7 @@ gdt_reload:
 // 并且只保存ss,esp,cs,eip,flags寄存器
 // 所以需要在中断中自行保存其它寄存器
 		
-	// 下面的代码基本上是对上面代码的重复，只不过换用了宏来处理
-	// 注意确定没写错，可对照反汇编来看。另外，下面的代码没有办法调试，原因未知
+ //macro
    .text
 .macro exception_handler name num with_error_code
 	    .extern do_handler_\name
